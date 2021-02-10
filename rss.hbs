@@ -15,7 +15,7 @@
         <description>{{@site.description}}</description>
         <language>{{@site.lang}}</language>
         <copyright>&#xA9; {{date format="YYYY"}} Sean Lunsford &amp; Elias Lanz</copyright>
-        <atom:link href="{{@site.url}}/podcast/rss/" rel="self"
+        <atom:link href="{{@site.url}}/rss/" rel="self"
             type="application/rss+xml" />
         <lastBuildDate>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}
         </lastBuildDate>
@@ -34,8 +34,7 @@
         {{#get "posts" filter="tag:-blog" include="tags,authors" as |episode|}}
             {{#foreach episode}}
                 <item>
-                    <title>{{slug}}: {{title}}</title>
-                    <itunes:title>{{title}}</itunes:title>
+                    <title>{{title}}</title>
                     <itunes:episode>{{slug}}</itunes:episode>
                     <link>{{url absolute="true"}}</link>
                     <pubDate>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}
