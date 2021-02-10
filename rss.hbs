@@ -14,25 +14,29 @@
         <link>{{@site.url}}</link>
         <description>{{@site.description}}</description>
         <language>{{@site.lang}}</language>
-        <copyright>{{@site.title}} Copyright {{date format="YYYY"}}</copyright>
+        <copyright>Copyright {{date format="YYYY"}}</copyright>
         <atom:link href="{{@site.url}}/podcast/rss/" rel="self"
             type="application/rss+xml" />
         <lastBuildDate>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}
         </lastBuildDate>
-        <itunes:author>{{@site.title}}</itunes:author>
+        <itunes:author>Sean Lunsford &amp; Elias Lanz</itunes:author>
         <itunes:summary>{{@site.description}}</itunes:summary>
         <itunes:owner>
-            <itunes:name>Your Name</itunes:name>
-            <itunes:email>youremail@example.com</itunes:email>
+            <itunes:name>Sean Lunsford</itunes:name>
+            <itunes:email>sean@seanlunsford.com</itunes:email>
         </itunes:owner>
-        <itunes:explicit>clean</itunes:explicit>
-        <itunes:image href="{{img_url @site.icon absolute="true"}}" />
-        <itunes:category text="Technology"></itunes:category>
+        <itunes:explicit>false</itunes:explicit>
+        <itunes:image href="{{img_url @site.logo absolute="true"}}" />
+        <itunes:category text="Society &amp; Culture">
+            <itunes:category text="Places &amp; Travel"></itunes:category>
+        </itunes:category>
 
         {{#get "posts" filter="tag:-blog" include="tags,authors" as |episode|}}
             {{#foreach episode}}
                 <item>
-                    <title>{{title}}</title>
+                    <title>{{slug}}: {{title}}</title>
+                    <itunes:title>{{title}}</itunes:title>
+                    <itunes:episode>{{slug}}</itunes:episode>
                     <link>{{url absolute="true"}}</link>
                     <pubDate>{{date format="ddd, DD MMM YYYY HH:mm:ss ZZ"}}
                     </pubDate>
