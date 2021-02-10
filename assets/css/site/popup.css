@@ -24,3 +24,9 @@
     transform: translateY(0);
     pointer-events: unset;
 }
+
+@media (prefers-color-scheme: dark) {
+	.popup {
+		background: var(--light-gray-color);
+	}
+}
