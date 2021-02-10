@@ -41,6 +41,10 @@
     font-size: 20px;
 }
 
+.episode-number {
+    color: var(--secondary-text-color);
+}
+
 .post-meta {
     margin-top: 5px;
     color: var(--secondary-text-color);

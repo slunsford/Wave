@@ -1,10 +1,18 @@
 <header class="post-header{{#if single}} container medium{{/if}}">
     {{#if single}}
-        <h1 class="post-title">{{title}}</h1>
+        <h1 class="post-title">
+            {{#if og_description}}
+                <span class="episode-number">{{slug}} </span>
+            {{/if}}
+            {{title}}</h1>
     {{else}}
         <h2 class="post-title">
             <a class="post-title-link"
-                href="{{url}}">{{#unless is_placeholder}}{{title}}
+                href="{{url}}">{{#unless is_placeholder}}
+                    {{#if og_description}}
+                        <span class="episode-number">{{slug}} </span>
+                    {{/if}}
+                    {{title}}
                 {{else}}...{{/unless}}</a>
         </h2>
     {{/if}}
