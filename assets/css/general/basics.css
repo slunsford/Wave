@@ -148,3 +148,17 @@ hr::after {
         margin-left: 0;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --brand-color: #fc7e0f;
+        --primary-text-color: #e6e6e6;
+        --secondary-text-color: #aaa;
+        --white-color: #0d0d0d;
+        --light-gray-color: #1a1a1a;
+        --mid-gray-color: #5a656b;
+        --dark-gray-color: #a8aab1;
+        --darker-gray-color: #f6f6f6;
+        --black-color: #fff;
+    }
+}
