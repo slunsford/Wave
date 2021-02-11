@@ -25,6 +25,11 @@
     pointer-events: unset;
 }
 
+.popup img {
+    width: 24px;
+    height: 24px;
+}
+
 .popup .subscribe-text {
     display: inline;
 }
