@@ -25,6 +25,10 @@
     pointer-events: unset;
 }
 
+.popup .subscribe-text {
+    display: inline;
+}
+
 @media (prefers-color-scheme: dark) {
 	.popup {
 		background: var(--light-gray-color);

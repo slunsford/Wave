@@ -3,6 +3,10 @@
     flex-wrap: wrap;
 }
 
+.subscribe-text {
+    display: none;
+}
+
 .subscribe-link {
     display: flex;
     align-items: center;
