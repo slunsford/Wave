@@ -43,6 +43,7 @@
 
 .episode-number {
     color: var(--secondary-text-color);
+    font-weight: 300;
 }
 
 .post-meta {
