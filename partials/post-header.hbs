@@ -22,7 +22,7 @@
                 {{#unless is_placeholder}}
                     <span class="post-meta-item post-meta-date">
                         <time datetime="{{date format="YYYY-MM-DD"}}">
-                            {{date published_at}}
+                            {{date published_at format="D MMMM YYYY"}}
                         </time>
                     </span>
                     {{#if tags}}
