@@ -37,7 +37,7 @@
                     <title>{{title}}</title>
 				{{#has tag="#trailer"}}
 					<itunes:episodeType>trailer</itunes:episodeType>
-					{{else}}
+				{{else}}
                     <itunes:episode>{{slug}}</itunes:episode>
 					{{#has tag="bonus"}}<itunes:episodeType>bonus</itunes:episodeType>{{/has}}
 				{{/has}}
