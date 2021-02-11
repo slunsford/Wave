@@ -151,3 +151,9 @@
         margin-top: 10px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .player-external {
+        background: rgba(13, 13, 13, 0.8);
+    }
+}
